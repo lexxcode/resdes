@@ -42,6 +42,11 @@ body {
 	color: #eee;
 	margin: 0 10px 20px;
 	flex: 1 1 calc(33.33% - 20px);
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 

@@ -135,6 +135,11 @@ h1 {
 	font-size: 3rem;
 	color: #eee;
 	margin: 0 0 30px 0;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .posts {
 	margin: 0 0 30px 30px;

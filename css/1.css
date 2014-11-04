@@ -30,6 +30,11 @@ body {
 	font-size: 5rem;
 	color: #eee;
 	flex: auto;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .box-side {
 	margin-left: 30px;
@@ -45,6 +50,11 @@ body {
 	color: #eee;
 	margin-bottom: 30px;
 	flex: auto;
+
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .box-itm:last-child {
 	margin-bottom: 0;
