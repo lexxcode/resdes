@@ -38,6 +38,8 @@ body {
 .grid-itm {
 	background: #222;
 	min-height: 200px;
+	font-size: 5rem;
+	color: #eee;
 	margin: 0 10px 20px;
 	flex: 1 1 calc(33.33% - 20px);
 }

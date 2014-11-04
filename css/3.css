@@ -65,9 +65,15 @@ h1 {
 	background: #222;
 	width: 130px; 
 	height: 50px;
+	font-size: 1.5rem;
 	color: #eee;
+	text-decoration: none;
+	text-align: center;
 	margin: 5px 0 0 15px;
-	display: block;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .main {
 	width: 100%;

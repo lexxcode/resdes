@@ -57,13 +57,27 @@ h1 {
 .header-tright {
 	background: #222;
 	min-height: 50px;
+	font-size: 1.5rem;
+	color: #eee;
 	margin-bottom: 40px;
 	flex-basis: 300px;
+	
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .header-bottom {
 	background: #222;
 	min-height: 50px;
+	font-size: 1.5rem;
+	color: #eee;
 	flex-basis: 100%;
+	
+	display: -webkit-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .main {
