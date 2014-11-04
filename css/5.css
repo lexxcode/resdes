@@ -1,0 +1,143 @@
+@charset "utf-8";
+html {
+	background: #ccc;
+	min-height: 100%;
+	font-family: sans-serif;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+}
+body {
+	margin: 0;
+	padding: 0 15px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	flex: auto;
+}
+a {
+	color: #1194c4;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration: none;
+}
+:focus {
+	outline: none;
+}
+img {
+	border: 0;
+}
+h1 {
+	margin-top: 0;
+}
+
+.header {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: 0 auto 30px;
+	padding: 30px 0 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.logo {
+	background: #222;
+	width: 150px;
+	height: 50px;
+	font-size: 0;
+	margin: 0 10px 40px 0;
+	display: flex;
+	flex: none;
+	align-items: center;
+}
+.header-tright {
+	background: #222;
+	min-height: 50px;
+	margin-bottom: 40px;
+	flex-basis: 300px;
+}
+.header-bottom {
+	background: #222;
+	min-height: 50px;
+	flex-basis: 100%;
+}
+
+.main {
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	margin: auto;
+	flex: auto;
+	box-sizing: border-box;
+}
+.grid {
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.grid-itm {
+	margin-bottom: 30px;
+	flex-basis: calc(33.33% - 30px * 2/3);
+
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+.grid-img {
+	margin: 0 auto 20px;
+	flex: 0 1 80%;
+}
+.grid-cont{
+	flex: 0 1 100%;
+}
+.grid-title {
+	text-align: center;
+}
+
+.footer {
+	background: #222;
+	width: 100%;
+	max-width: 960px;
+	min-width: 430px;
+	color: #eee;
+	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+	.header-tright {
+		display: none;
+	}
+	.grid-itm {
+		flex-wrap: nowrap;
+		flex-basis: 100%;
+	}
+	.grid-img {
+		flex: 0 0 auto;
+	}
+	.grid-itm:nth-child(even) .grid-img {
+		margin: 0 0 0 30px;
+		order: 2;
+	}
+	.grid-itm:nth-child(odd) .grid-img {
+		margin: 0 30px 0 0;
+
+	}
+	.grid-cont {
+		flex: 1 1 auto;
+	}
+	.grid-title {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 600px) {
+	.grid-img {
+		display: none;
+	}
+}
